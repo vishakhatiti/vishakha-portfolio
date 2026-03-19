@@ -9,18 +9,18 @@ const Contact = () => {
   ].filter((item) => item.href);
 
   return (
-    <section id="contact" className="relative overflow-hidden bg-[#0d0e11] px-6 py-20 text-white lg:py-24">
+    <section id="contact" className="relative overflow-hidden bg-[#0d0e11] text-white">
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent" />
 
-      <div className="mx-auto max-w-7xl">
+      <div className="max-w-6xl mx-auto px-6 py-20">
         <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] px-6 py-12 text-left shadow-2xl shadow-black/35 backdrop-blur-xl sm:px-10 lg:px-14 lg:py-16">
           <p className="text-sm font-semibold uppercase tracking-[0.36em] text-gray-500">
             Contact
           </p>
-          <h2 className="mt-5 max-w-3xl text-4xl font-bold tracking-[-0.04em] text-white sm:text-5xl">
+          <h2 className="mt-5 max-w-3xl text-4xl font-bold tracking-[-0.04em] text-white md:text-5xl">
             Open to meaningful opportunities and professional collaborations.
           </h2>
-          <p className="mt-6 max-w-2xl text-base leading-8 text-gray-400 sm:text-lg">
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-400">
             If you are hiring for full-stack development, internships, or collaborative product
             work, I would be glad to connect and discuss how I can contribute.
           </p>

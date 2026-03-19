@@ -60,31 +60,31 @@ const renderLink = (href, label, variant) => {
 
 const Projects = () => {
   return (
-    <section id="projects" className="relative overflow-hidden bg-[#17191d] px-6 py-20 text-white lg:py-24">
+    <section id="projects" className="relative overflow-hidden bg-[#17191d] text-white">
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,_rgba(168,85,247,0.12),_transparent_24%),radial-gradient(circle_at_bottom_left,_rgba(34,211,238,0.08),_transparent_28%)]" />
 
-      <div className="mx-auto max-w-7xl">
+      <div className="max-w-6xl mx-auto px-6 py-20">
         <div className="max-w-3xl text-left">
           <p className="text-sm font-semibold uppercase tracking-[0.38em] text-gray-500">
             Projects
           </p>
-          <h2 className="mt-5 max-w-2xl text-4xl font-bold tracking-[-0.04em] text-white sm:text-5xl">
+          <h2 className="mt-5 max-w-2xl text-4xl font-bold tracking-[-0.04em] text-white md:text-5xl">
             Selected work presented with clarity, structure, and visual polish.
           </h2>
-          <p className="mt-5 max-w-2xl text-base leading-8 text-gray-400 sm:text-lg">
+          <p className="mt-5 max-w-2xl text-lg leading-8 text-gray-400">
             A refined project showcase designed to highlight problem solving, technical depth,
             and clean execution across responsive web experiences.
           </p>
         </div>
 
-        <div className="mt-14 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, projectIndex) => {
             const projectImages = getProjectImages(project);
 
             return (
               <article
                 key={project.title}
-                className="group relative flex h-full flex-col overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.03] p-6 shadow-2xl shadow-black/40 backdrop-blur-xl sm:p-8"
+                className="group relative flex h-full flex-col overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.03] p-6 text-left shadow-2xl shadow-black/40 backdrop-blur-xl sm:p-8"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent opacity-70" />
                 <div className="absolute -right-16 top-8 h-40 w-40 rounded-full bg-violet-500/10 blur-3xl" />
@@ -132,7 +132,7 @@ const Projects = () => {
                       Highlights
                     </p>
 
-                    <ul className="mt-4 space-y-3 text-sm leading-7 text-gray-300 sm:text-base">
+                    <ul className="mt-4 space-y-3 text-base leading-7 text-gray-300">
                       {project.description.map((point) => (
                         <li key={point} className="flex items-start gap-3">
                           <span className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-gradient-to-r from-violet-400 to-cyan-300 shadow-[0_0_15px_rgba(34,211,238,0.35)]" />

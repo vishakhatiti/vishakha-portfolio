@@ -19,7 +19,7 @@ import googleCloud from "../images/certificates/google-cloud.jpeg";
 import sigma from "../images/certificates/sigma-web-dev.jpeg";
 import uiux from "../images/certificates/uiux-coursera.jpg";
 import ai from "../images/certificates/ai-greate-learning.jpg";
-import chatgpt from "../images/certificates/ChatGPT-greate learning.jpg";
+import chatgpt from "../images/certificates/ChatGPT-greate-learning.jpg";
 import ml from "../images/certificates/ml-greate-learning.jpg";
 import ppt from "../images/certificates/ppt-winner.jpeg";
 import olympiad from "../images/certificates/sppu-olympiad-2026.jpeg";

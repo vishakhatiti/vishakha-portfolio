@@ -55,13 +55,13 @@ const Projects = () => {
           {projects.map((project) => (
             <article
               key={project.title}
-              className="group overflow-hidden rounded-xl border border-white/10 bg-[#111111] shadow-xl shadow-black/20 transition-all duration-300 hover:scale-105 hover:border-white/20"
+              className="group overflow-hidden rounded-xl border border-white/10 bg-[#111111] shadow-xl shadow-black/20 transition-all duration-300 hover:border-white/20"
             >
-              <div className="overflow-hidden">
+              <div className="overflow-hidden rounded-lg">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="h-56 w-full object-cover transition-all duration-300 group-hover:scale-105"
+                  className="h-48 w-full object-cover transition duration-300 group-hover:scale-105"
                 />
               </div>
 

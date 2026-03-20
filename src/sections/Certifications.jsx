@@ -30,12 +30,12 @@ const Certifications = () => {
           {certificateItems.map((certificate) => (
             <div
               key={`${certificate.title}-${certificate.image}`}
-              className="overflow-hidden rounded-2xl border border-white/10 bg-[#111111] p-4 shadow-xl shadow-black/20 transition-all duration-300 hover:scale-105 hover:border-white/20"
+              className="overflow-hidden rounded-2xl border border-white/10 bg-[#111111] p-4 shadow-xl shadow-black/20 transition-all duration-300 hover:border-white/20"
             >
               <img
                 src={certificate.image}
                 alt={certificate.title}
-                className="h-56 w-full rounded-xl object-cover"
+                className="h-52 w-full rounded-xl object-cover"
               />
               <p className="mt-4 text-sm font-medium leading-6 text-gray-200">
                 {certificate.title}

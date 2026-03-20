@@ -75,11 +75,11 @@ const Hero = () => {
 
           <div className="relative flex justify-center md:justify-end">
             <div className="absolute inset-x-10 top-10 h-72 rounded-full bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 blur-3xl" />
-            <div className="relative w-full max-w-md overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-2xl shadow-black/40 backdrop-blur-sm transition-all duration-300 hover:scale-[1.02]">
+            <div className="relative flex w-64 h-64 items-center justify-center overflow-hidden rounded-full border border-white/10 bg-white/5 shadow-2xl shadow-black/40 backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] md:h-80 md:w-80">
               <img
                 src={images.profile}
                 alt="Portrait of Vishakha Mane"
-                className="h-[420px] w-full rounded-[1.5rem] object-cover object-center"
+                className="h-full w-full object-cover object-center"
               />
             </div>
           </div>

@@ -2,54 +2,86 @@ import images from "../data/images";
 
 const Hero = () => {
   return (
-    <section className="bg-[#0a0a0a] text-white">
-      <div className="max-w-6xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-16 min-h-screen">
-        <div className="flex-1 max-w-2xl text-center md:text-left">
-          <p className="text-sm uppercase tracking-[0.3em] text-gray-400 mb-4">
-            Developer Portfolio
-          </p>
-
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-            Hi, I&apos;m{" "}
-            <span className="bg-gradient-to-r from-purple-400 via-fuchsia-400 to-pink-500 bg-clip-text text-transparent">
-              Vishakha Mane
+    <section
+      id="home"
+      className="overflow-hidden bg-[#0a0a0a] text-white"
+    >
+      <div className="max-w-6xl mx-auto px-6 py-20 min-h-screen flex flex-col justify-center">
+        <div className="grid items-center gap-14 md:grid-cols-[1.1fr_0.9fr]">
+          <div className="text-center md:text-left">
+            <span className="inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs font-medium uppercase tracking-[0.28em] text-gray-300">
+              Recruiter-ready portfolio
             </span>
-          </h1>
 
-          <h2 className="mt-5 text-xl md:text-2xl font-medium text-gray-200">
-            Full-Stack Developer crafting polished, high-performance web experiences.
-          </h2>
+            <h1 className="mt-8 text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+              Building refined digital products with a focus on clarity,
+              performance, and real-world impact.
+            </h1>
 
-          <p className="mt-6 max-w-lg text-base md:text-lg leading-8 text-gray-400 md:mx-0 mx-auto">
-            I design and build modern applications with clean interfaces, scalable architecture, and thoughtful user experiences that feel reliable and premium.
-          </p>
+            <h2 className="mt-6 text-3xl font-semibold sm:text-4xl lg:text-5xl">
+              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                Vishakha Mane
+              </span>
+            </h2>
 
-          <div className="mt-10 flex flex-col sm:flex-row items-center md:items-start gap-4">
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition duration-300 hover:scale-[1.02] hover:bg-gray-200"
-            >
-              GitHub
-            </a>
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center rounded-full border border-gray-600 px-6 py-3 text-sm font-semibold text-white transition duration-300 hover:scale-[1.02] hover:border-gray-400 hover:bg-white/5"
-            >
-              Contact
-            </a>
+            <p className="mt-4 text-xl text-gray-200 sm:text-2xl">
+              Full-Stack Developer · Frontend-Focused Problem Solver
+            </p>
+
+            <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-gray-400 md:mx-0 md:text-lg">
+              I create polished, responsive web experiences that balance clean
+              design with practical engineering. My work centers on building
+              intuitive interfaces, scalable project structures, and products
+              that feel dependable from first impression to final interaction.
+            </p>
+
+            <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row md:items-start">
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex min-w-[160px] items-center justify-center rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-purple-500/20 transition-all duration-300 hover:scale-105"
+              >
+                GitHub
+              </a>
+              <a
+                href="#contact"
+                className="inline-flex min-w-[160px] items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:border-white/30 hover:bg-white/10"
+              >
+                Contact
+              </a>
+            </div>
+
+            <div className="mt-12 grid gap-4 text-left sm:grid-cols-3">
+              {[
+                { label: "Core Focus", value: "React, UI systems, modern web apps" },
+                { label: "Approach", value: "Clean architecture and thoughtful UX" },
+                { label: "Goal", value: "Deliver production-ready experiences" },
+              ].map((item) => (
+                <div
+                  key={item.label}
+                  className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm"
+                >
+                  <p className="text-xs uppercase tracking-[0.22em] text-gray-500">
+                    {item.label}
+                  </p>
+                  <p className="mt-3 text-sm leading-6 text-gray-200">
+                    {item.value}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
 
-        <div className="flex-1 flex justify-center md:justify-end">
-          <div className="relative">
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-500/20 to-pink-500/10 blur-2xl" />
-            <img
-              src={images.profile}
-              alt="Vishakha Mane"
-              className="relative h-64 w-64 md:h-80 md:w-80 rounded-full object-cover shadow-2xl ring-1 ring-white/10 transition duration-500 hover:scale-105"
-            />
+          <div className="relative flex justify-center md:justify-end">
+            <div className="absolute inset-x-10 top-10 h-72 rounded-full bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 blur-3xl" />
+            <div className="relative w-full max-w-md overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-2xl shadow-black/40 backdrop-blur-sm transition-all duration-300 hover:scale-[1.02]">
+              <img
+                src={images.profile}
+                alt="Portrait of Vishakha Mane"
+                className="h-[420px] w-full rounded-[1.5rem] object-cover object-center"
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
 
 const navLinks = [
@@ -38,7 +39,33 @@ function Navbar() {
         </ul>
       </div>
     </header>
+=======
+import { useState } from "react";
+import "./Navbar.css";
+
+const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <nav className="navbar">
+      <div className="container nav-content">
+        <h2 className="logo">Vishakha</h2>
+
+        <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+          ☰
+        </div>
+      </div>
+    </nav>
+>>>>>>> 239a400 (Initial portfolio setup)
   );
-}
+};
 
 export default Navbar;

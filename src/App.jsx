@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -5,6 +6,10 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+=======
+import Navbar from './components/Navbar'
+import Hero from './sections/Hero'
+>>>>>>> 239a400 (Initial portfolio setup)
 
 function App() {
   useEffect(() => {
@@ -25,6 +30,7 @@ function App() {
   return (
     <>
       <Navbar />
+<<<<<<< HEAD
       <main>
         <Hero />
         <About />
@@ -32,8 +38,15 @@ function App() {
         <Contact />
       </main>
       <Footer />
+=======
+      <Hero />
+>>>>>>> 239a400 (Initial portfolio setup)
     </>
-  );
+  )
 }
 
+<<<<<<< HEAD
 export default App;
+=======
+export default App
+>>>>>>> 239a400 (Initial portfolio setup)

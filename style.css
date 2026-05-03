@@ -2,97 +2,92 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body {
   background: #0f172a;
-  color: #e5e7eb;
-  line-height: 1.6;
+  color: white;
 }
 
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 80px 20px;
+/* NAVBAR */
+header {
+  background: #020617;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
 }
 
-.profile-img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #6366f1;
-  margin-bottom: 20px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-h1 {
-  font-size: 2.5rem;
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
-h2 {
-  color: #a855f7;
-  margin-bottom: 10px;
-}
-
-.summary {
-  max-width: 600px;
-  margin: auto;
-  margin-top: 10px;
-  opacity: 0.8;
-}
-
-.buttons a {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  border-radius: 8px;
-  background: #6366f1;
+nav a {
   color: white;
   text-decoration: none;
   transition: 0.3s;
 }
 
-.buttons a:hover {
-  background: #a855f7;
+nav a:hover {
+  color: #38bdf8;
 }
 
 /* SECTIONS */
 .section {
-  padding: 50px 20px;
+  padding: 80px 40px;
   text-align: center;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
+/* HOME */
+.home span {
+  color: #38bdf8;
+}
+
+/* BUTTON */
+button {
   margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: #38bdf8;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.grid li {
+/* PROJECTS */
+.project-card {
   background: #1e293b;
-  padding: 10px;
-  border-radius: 6px;
-}
-
-/* CARDS */
-.card {
-  background: #1e293b;
-  margin: 15px auto;
   padding: 20px;
-  max-width: 500px;
+  margin: 20px auto;
+  width: 300px;
   border-radius: 10px;
-  transition: 0.3s;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
 }
 
-/* FOOTER */
+input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
 footer {
-  text-align: center;
   padding: 20px;
-  opacity: 0.6;
+  text-align: center;
+  background: #020617;
 }

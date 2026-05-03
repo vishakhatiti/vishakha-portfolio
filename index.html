@@ -1,49 +1,77 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-<<<<<<< HEAD
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Vishakha Mane portfolio — Full-Stack Developer specializing in MERN stack, APIs, and secure authentication systems." />
-    <meta name="theme-color" content="#0f172a" />
-    <title>Vishakha Mane | Full-Stack Developer</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-=======
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Portfolio</title>
 
-    <!-- Responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!-- SEO -->
-    <title>Vishakha Mane | Portfolio</title>
-    <meta name="description" content="Full Stack Developer Portfolio" />
+  <!-- NAVBAR -->
+  <header>
+    <nav>
+      <h2 class="logo">Portfolio</h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Google Font (Premium feel) -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- HOME -->
+  <section id="home" class="section home">
+    <h1>Hi, I'm <span>Your Name</span></h1>
+    <p>Full Stack Developer | MERN | JavaScript</p>
+    <button onclick="scrollToSection('contact')">Contact Me</button>
+  </section>
 
->>>>>>> 239a400 (Initial portfolio setup)
-  </head>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate developer skilled in HTML, CSS, JavaScript, and building scalable web applications.
+    </p>
+  </section>
 
-  <body>
-    <div id="root"></div>
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
 
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <div class="project-card">
+      <h3>Project 1</h3>
+      <p>Short description of your project.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Project 2</h3>
+      <p>Short description of your project.</p>
+    </div>
+
+  </section>
+
+  <!-- CONTACT (Netlify Form) -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Your Name</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
-=======
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
->>>>>>> f84ac61d0dc86f87b040cf004adc04725b1c8413

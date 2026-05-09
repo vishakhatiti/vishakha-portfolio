@@ -15,12 +15,28 @@ document.querySelectorAll("a[href^='#']").forEach(link => {
   });
 });
 
+// FOOTER YEAR
+const yearNode = document.getElementById("year");
+if (yearNode) {
+  yearNode.textContent = new Date().getFullYear();
+}
+
 // FORM
 const form = document.getElementById("contactForm");
 const msg = document.getElementById("successMsg");
 
 form.addEventListener("submit", e => {
   e.preventDefault();
+
+  const name = form.querySelector('input[type="text"]').value.trim();
+  const email = form.querySelector('input[type="email"]').value.trim();
+  const message = form.querySelector("textarea").value.trim();
+
+  if (!name || !email || !message) {
+    msg.textContent = "Please complete all fields before submitting.";
+    return;
+  }
+
   msg.textContent = "Message sent successfully!";
   form.reset();
 });
